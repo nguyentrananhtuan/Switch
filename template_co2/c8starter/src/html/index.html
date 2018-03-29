@@ -1,0 +1,13 @@
+{% extends 'layouts/application.html' %}{% block bodyClass %}class="page-home"{% endblock %}{% block content %}
+<main id="main-content" role="main">
+	
+	{% include "modules/header.html" %}
+
+	{% include "modules/banner.html" %}
+	<div class="container">
+	
+    {% include "modules/component/pagination.html" %}
+	</div>
+</main>
+{% include "modules/component/loading.html" %}
+{% endblock %}

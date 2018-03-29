@@ -1,0 +1,58 @@
+#header {
+  // @include position(fixed, 0, 0, null, 0, 9999);
+  @extend %add-tr;
+  position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: transparent;
+  &.pin-header {
+    box-shadow: 2px 9px 18px -6px rgba(0, 0, 0, .22);
+  }
+}
+
+#header-logo {
+  @extend .navbar-brand;
+  width: 100%;
+  max-width: 200px;
+  margin: 0;
+}
+nav{
+  position: absolute;
+  top:0;
+}
+.search-frame{
+  position: relative;
+}
+.search-icon{
+  position: absolute;
+  bottom: 25%;
+  right: 20px;
+}
+@include media-breakpoint-up(md) {
+  #header {
+    .navbar {
+      padding: 0 15px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  html.is-open-menu,
+  html.is-open-menu body {
+    overflow: hidden;
+    height: 100%;
+  }
+  html.is-open-menu {
+    body {
+      @include position(absolute, 0, 0, null, 0, null);
+    }
+    #header {
+      bottom: 0;
+      height: 100%;
+      overflow-y: auto;
+    }
+  }
+}
+
