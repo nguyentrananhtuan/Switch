@@ -10,10 +10,15 @@
   &.pin-header {
     box-shadow: 2px 9px 18px -6px rgba(0, 0, 0, .22);
   }
+  .container{
+    position: relative;
+  }
 }
 
 #header-logo {
   @extend .navbar-brand;
+  position: absolute;
+  left: 50%;
   width: 100%;
   max-width: 200px;
   margin: 0;
@@ -21,6 +26,10 @@
 nav{
   position: absolute;
   top:0;
+}
+.search-turtle{
+  position: absolute;
+  right: 0;
 }
 .search-frame{
   position: relative;
