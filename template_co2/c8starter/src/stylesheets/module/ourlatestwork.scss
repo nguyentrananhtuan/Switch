@@ -1,0 +1,36 @@
+.ourlatestwork{
+    background-color: $green-100;
+    text-align: center;
+    .ourlatestwork-content1{
+      //  text-align: center;
+        padding-top: 40px;
+        padding-bottom: 60px;
+        .button-work{
+            word-spacing: -4px;
+            button{
+                border: 1px solid #2b9b2b;
+                background-color: white;
+                color: #2b9b2b;
+            }
+            button:hover,button.active{
+                color: white;
+                background-color: #2b9b2b;
+            }
+            padding: 0;
+            padding-top: 60px;
+            #btn1{
+            border-radius: 25px 0px 0px 25px;
+             }
+            #btn3{
+            border-radius: 0px 25px 25px 0px;
+            }
+        }
+    }
+    .ourlatestwork-content2{
+        padding-bottom: 55px;
+        display: inline-block;
+        img{
+            padding: 15px;
+        }
+    }
+}

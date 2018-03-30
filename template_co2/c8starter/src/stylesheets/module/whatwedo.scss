@@ -1,0 +1,22 @@
+.whatwedo{
+    background-color:#fff; 
+    .whatwedo-content1 {
+        padding-top: 40px;
+        padding-bottom: 70px;
+
+    }
+    .whatwedo-content2{
+        padding-bottom: 70px;
+        text-align: center;
+        .border-img{
+            display: inline-block;
+            border: 30px solid#e1f3e1 ;
+            border-radius: 25px;
+            background-color: #e1f3e1;
+        }
+        .lorem{
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+}
