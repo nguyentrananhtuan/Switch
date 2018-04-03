@@ -11,25 +11,48 @@
     box-shadow: 2px 9px 18px -6px rgba(0, 0, 0, .22);
   }
   .container{
-    position: relative;
+    // position: relative;
   }
 }
 
 #header-logo {
   @extend .navbar-brand;
   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top:10px;
   left: 50%;
   width: 100%;
   max-width: 200px;
   margin: 0;
 }
 nav{
-  position: absolute;
+  position: relative;
   top:0;
+}
+.icon-open{
+  width: 50px;
+  height: 50px;
+  /* background:#fff; */
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  cursor: pointer;
+  display: none;
+}
+.showmenu{
+  display: block;
+  /* display: none; */
+  // background-color: #4CAF50;
+  // color: white;
 }
 .search-turtle{
   position: absolute;
-  right: 0;
+  right: 15px;
+}
+.search-turtle-sm{
+  display: none;
+  color: #fff;
 }
 .search-frame{
   position: relative;
@@ -65,3 +88,68 @@ nav{
   }
 }
 
+@media screen and (max-width:890px){
+  .icon-open{
+      display: block;
+      color:white;
+
+  }
+  .search-turtle{
+    top:10px;
+  }
+  #header-logo{
+      width:100%;
+      max-width: 100%;
+      position: absolute;
+      display: flex;
+    
+      /* padding-top: 12px; 
+      padding-bottom: 33px;  */
+     
+  }
+  .main-menu-ul{
+      width: 100%;
+      max-width:100%;
+      padding-top:20px;
+      padding-left: 15px;
+      text-align: left;
+      
+  }
+  .main-menu-ul ul li{
+      display: block;
+      color:#fff;
+      list-style: none;
+      
+  
+  }
+  .main-menu-ul a:hover{
+      text-decoration: none;
+      // background: yellowgreen;
+      // text-decoration-color: red;
+      // color:red;
+      // line-height: 1.5px;
+  }
+  .showmenu{
+      display: none;
+  }
+  .show{
+      display: block;
+  }
+}
+@media screen and (max-width:890px){
+  .search-turtle{
+    display: none;
+
+  }
+  .search-turtle-sm{
+    display: initial;
+    top: 15px;
+    right: 20px;
+    a{
+      color:white;
+    }
+    a:hover{
+      color:gray;
+    }
+  }
+}

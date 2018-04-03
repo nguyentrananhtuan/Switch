@@ -1,22 +1,32 @@
 <header id="header" data-module="header" class="" role="banner">
-  <div class="container">
-    <nav class="container navbar navbar-expand-md" role="navigation">
+  <div>
+    <nav class=" navbar navbar-expand-md" role="navigation">
       {% include "modules/menu.html" %}
-      <a id="header-logo" title="index" href="index.html">
-        <img src="../images/logo_switch.png" alt="Switch">
-      </a>
-      <button class="hamburger-menu" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false"
+      <div class="text-center">
+        <a id="header-logo" title="index" href="index.html">
+          <img src="../images/logo_switch.png" alt="Switch">
+        </a>
+      </div>
+      <!-- <button class="hamburger-menu" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false"
         aria-label="Toggle navigation">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
+      </button> -->
+      <div class="icon-open" onclick="myFunction()">
+        <i class="fas fa-bars fa-2x"></i>
+      </div>
       <form class="form-inline my-2 my-lg-0 search-turtle">
         <div class="search-frame">
           <input class="form-control mr-sm-2" type="search" placeholder="Search..." aria-label="Search">
           <span class="icon-search search-icon"></span>
         </div>
       </form>
+      <div class="search-turtle search-turtle-sm">
+        <a href="">
+          <i class="fas fa-search fa-2x"></i>
+        </a>
+      </div>
     </nav>
   </div>
 </header>

@@ -52,6 +52,22 @@ h6,
 h2{
   color:#828181;
   text-transform: uppercase;
+  position: relative;
+}
+h2::before {
+  content: "";
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: 0;
+    width: 45px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: black;
+}
+h3{
+  padding-top: 20px;
+  color:#b7b3b3;
 }
 ol,
 ul {
@@ -63,7 +79,10 @@ ul {
 img {
   max-width: 100%;
 }
-
+p{
+  color: #444444;
+  font-size: 15px;
+}
 blockquote {
   font-size: 1em;
   font-style: italic;

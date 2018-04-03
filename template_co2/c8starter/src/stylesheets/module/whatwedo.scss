@@ -3,11 +3,15 @@
     .whatwedo-content1 {
         padding-top: 40px;
         padding-bottom: 70px;
+        position: relative;
 
     }
     .whatwedo-content2{
         padding-bottom: 70px;
         text-align: center;
+        .row{
+            justify-content: center;
+        }
         .border-img{
             display: inline-block;
             border: 30px solid#e1f3e1 ;

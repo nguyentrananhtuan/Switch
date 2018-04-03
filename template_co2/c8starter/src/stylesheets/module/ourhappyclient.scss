@@ -1,11 +1,29 @@
 .ourhappyclient{
     background-color: #f2f1f1;
     text-align: center;
+   
     .ourhappyclient-content1{
         padding-top: 35px;
         padding-bottom: 60px;
+        position: relative;
     }
     .ourhappyclient-content2{
         padding-bottom: 65px;
+        // .col-sm-3{
+        //     position: relative;
+        // }
+        // img{
+        //     margin:auto;
+        //     position:absolute;
+        //     top:0; 
+        //     left:0; 
+        //     right:0; 
+        //     bottom:0;
+        // }
+        .row-2{
+            img{
+                margin: 30px 0px;
+            }
+        }
     }
 }

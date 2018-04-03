@@ -1,9 +1,10 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover" />
     <title>{% block title %}{{ title }}{% endblock %}</title>
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <link rel="apple-touch-icon" href="/custom-icon.png">
@@ -29,29 +30,40 @@
     <meta name="twitter:title" content="Content Title">
     <meta name="twitter:description" content="Content description less than 200 characters">
     <meta name="twitter:image" content="https://example.com/image.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1"
+        crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
     <link href='//fonts.googleapis.com' rel='dns-prefetch' crossorigin/>
     <link href='//cdnjs.cloudflare.com' rel='dns-prefetch' crossorigin/>
     <link href='//fonts.googleapis.com' rel='preconnect' crossorigin/>
     <link href='//cdnjs.cloudflare.com' rel='preconnect' crossorigin/>
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,800|Ubuntu:400,400i,500,500i,700,700i|Montserrat:300,400,400i,500,600,700,900" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,800|Ubuntu:400,400i,500,500i,700,700i|Montserrat:300,400,400i,500,600,700,900"
+        rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/app.css">
-    <link rel="stylesheet" media="print" href="stylesheets/print.css">
-    {% block head %}{% endblock %}
+    <link rel="stylesheet" media="print" href="stylesheets/print.css"> {% block head %}{% endblock %}
+    <script src="../../javascripts/modules/testimonials.js"></script>
 </head>
+
 <body {% block bodyClass %}{% endblock %}>
     <div id="wrapper">
-        {% block header %}
-        {% include "modules/header.html" %}
-        {% endblock %}
-        {% block content %}
-        {% endblock %}
-        {% block footer %}
-        {% include "modules/footer.html" %}
-        {% include "modules/no-script.html" %}
-        {% endblock %}
-        {% block javascript %}
-        {% include "modules/javascript.html" %}
-        {% endblock %}
+        {% block header %} {% include "modules/header.html" %} {% endblock %} {% block content %} {% endblock %} {% block footer
+        %} {% include "modules/footer.html" %} {% include "modules/no-script.html" %} {% endblock %} {% block javascript
+        %} {% include "modules/javascript.html" %} {% endblock %}
     </div>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="../../javascripts/modules/testimonials.js"></script>
+    <script type="text/javascript">
+        $('.fade').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            fade: true,
+            cssEase: 'linear'
+        });
+    </script> -->
 </body>
+
 </html>

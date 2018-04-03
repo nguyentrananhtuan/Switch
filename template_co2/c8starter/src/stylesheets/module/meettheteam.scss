@@ -1,7 +1,68 @@
 .meettheteam{
-    background-color: $green-100;
+    background-color:$green-100;
     .meettheteam-content1{
+        position: relative;
         padding-top: 35px;
         padding-bottom: 50px;
+        h2{
+            color:#207b20;
+        }
+        h3{
+            color: #2b9b2b;
+        }
+    }
+    .meettheteam-content2{
+        padding-bottom: 60px;
+        .row-edit{
+            justify-content: center;
+            @media (min-width: 992px) {
+                .col-lg-2 {
+                    flex: 0 0 20%;
+                    max-width: 20%;
+                    }
+            }
+            // img{
+            //     margin: 15px 0px ;
+            //     // width: 100%;
+            //     }   
+        } 
+        // .col-img{
+        //    padding: 25px;
+        //     max-width: 20%;
+           
+        .img-body{
+            position: relative;
+        
+            &::after{
+                content: "";
+                position: absolute;
+                top: 120%;
+                display: block;
+                right: 0;
+                left: 0;
+                width: 2px;
+                margin: 0 auto;
+                height: 78px;
+                background-color: black;
+                }
+        }  
+        .text-img{
+            margin-top: 100px;  
+            text-align: center;
+            h3{
+                color:white;
+            }
+            .logo{
+                margin-top: 0px;
+                &:hover{
+                opacity: 1;
+                background-color: white;
+                }
+            }
+        } 
+    }
+    .meettheteam-content3{
+        background-color: $green-200;
+        text-align: center;
     }
 }

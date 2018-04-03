@@ -31,6 +31,14 @@ const Header = (($) => {
       this.scrollPinHeader()
     }
 
+    myFunction() {
+      var x = document.getElementById("showmenu");
+      if (x.className === "showmenu") {
+          x.className += " show";
+      } else {
+          x.className = "showmenu";
+      }
+  }
     settingPin () {
       let scrollTop = $(window).scrollTop()
       if (scrollTop > this._config.scrollT) {
@@ -39,7 +47,7 @@ const Header = (($) => {
         this._element.removeClass('pin-header')
       }
     }
-
+      
     scrollPinHeader () {
       this.settingPin()
       $(window).scroll(() => {

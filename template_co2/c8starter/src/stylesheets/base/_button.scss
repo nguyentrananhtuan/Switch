@@ -1,9 +1,10 @@
 .btn {
   text-decoration: none !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   white-space: normal;
   border-radius: 25px;
   padding: 15px 28px;
-  margin-top: 20px;
+  margin: 20px 0px;
   cursor: pointer;
   &.focus,
   &:focus {
@@ -21,13 +22,21 @@
 .btn-small{
   padding:2px 10px;
 }
+.btn-notop{
+  padding-top: 0px;
+  margin-top: 0px;
+}
 .btn-md{
-  padding: 15px 20px;
+  padding: 10px 20px;
 }
 .btn-gray{
-  color: $black;
-  background-color: $white;
+  background-color: #dddcdc;
+//  background-color: $black;
   opacity: 0.7;
+  color: $black;
+}
+.btn-white{
+  background-color:#e6e7e6;
 }
 @include media-breakpoint-down(sm) {
   //max-width: 767px

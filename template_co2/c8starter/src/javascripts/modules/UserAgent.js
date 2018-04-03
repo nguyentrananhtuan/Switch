@@ -83,6 +83,20 @@ const UserAgent = (() => {
       }
     })
   }
+  const slickSlider = () => {
+    $('.testimonials-content2').slick({
+      dots: false,
+      slidesToShow: 1,
+      infinite: true,
+      speed: 500,
+      arrows: true,
+      nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button" style="display: block;"><i class="fas fa-angle-right fa-3x"></i></button>',
+      prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="display: block;"><i class="fas fa-angle-left fa-3x"></i></button>'
+    })    
+  }
+
+
+  slickSlider()
   checkDevice()
   browserDetection()
   selectpicker()
