@@ -10,21 +10,17 @@
   &.pin-header {
     box-shadow: 2px 9px 18px -6px rgba(0, 0, 0, .22);
   }
-  .container{
-    // position: relative;
-  }
 }
 
 #header-logo {
   @extend .navbar-brand;
   position: absolute;
-  margin-left: auto;
+  margin-left: -100px;
   margin-right: auto;
-  top:10px;
+  top:0px;
   left: 50%;
   width: 100%;
   max-width: 200px;
-  margin: 0;
 }
 nav{
   position: relative;
@@ -62,6 +58,7 @@ nav{
   bottom: 25%;
   right: 20px;
 }
+
 @include media-breakpoint-up(md) {
   #header {
     .navbar {
@@ -88,7 +85,7 @@ nav{
   }
 }
 
-@media screen and (max-width:890px){
+@media screen and (max-width:800px){//890
   .icon-open{
       display: block;
       color:white;
@@ -96,16 +93,6 @@ nav{
   }
   .search-turtle{
     top:10px;
-  }
-  #header-logo{
-      width:100%;
-      max-width: 100%;
-      position: absolute;
-      display: flex;
-    
-      /* padding-top: 12px; 
-      padding-bottom: 33px;  */
-     
   }
   .main-menu-ul{
       width: 100%;
@@ -130,13 +117,13 @@ nav{
       // line-height: 1.5px;
   }
   .showmenu{
-      display: none;
-  }
-  .show{
+    display: none;
+    &.show{
       display: block;
+    }
   }
 }
-@media screen and (max-width:890px){
+@media screen and (max-width:800px){
   .search-turtle{
     display: none;
 

@@ -1,6 +1,6 @@
-.meettheteam{
+.mod-meettheteam{
     background-color:$green-100;
-    .meettheteam-content1{
+    .meettheteam-head{
         position: relative;
         padding-top: 35px;
         padding-bottom: 50px;
@@ -11,7 +11,7 @@
             color: #2b9b2b;
         }
     }
-    .meettheteam-content2{
+    .meettheteam-body{
         padding-bottom: 60px;
         .row-edit{
             justify-content: center;
@@ -61,8 +61,13 @@
             }
         } 
     }
-    .meettheteam-content3{
+    .meettheteam-foot{
         background-color: $green-200;
         text-align: center;
     }
+}
+.mod-meetteam-col{
+    @extend .col-lg-2;
+    @extend .col-md-4;
+    @extend .col-6;
 }

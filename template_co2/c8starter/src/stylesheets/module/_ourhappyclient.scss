@@ -1,13 +1,13 @@
-.ourhappyclient{
+.mod-ourhappyclient{
     background-color: #f2f1f1;
     text-align: center;
    
-    .ourhappyclient-content1{
+    .ourhappyclient-head{
         padding-top: 35px;
         padding-bottom: 60px;
         position: relative;
     }
-    .ourhappyclient-content2{
+    .ourhappyclient-body{
         padding-bottom: 65px;
         // .col-sm-3{
         //     position: relative;
@@ -26,4 +26,12 @@
             }
         }
     }
+}
+.mod-ourhappy-col{
+    @extend .col-md-3;
+    @extend .col-sm-6;
+    @extend .col-12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

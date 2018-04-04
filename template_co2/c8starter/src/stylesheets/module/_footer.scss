@@ -4,7 +4,7 @@
 }
 
 .footer-item-col {
-  @include make-col-ready();
+  // @include make-col-ready();
   @extend .col-lg-4;
   @extend .col-md-6;
   @extend .col-12;

@@ -11,7 +11,7 @@ $icomoon: "icomoon";
 
 /* set screen */
 
-$grid-breakpoints: ( xs: 0, sm: 481px, md: 768px, lg: 992px, xl: 1200px);
+$grid-breakpoints: ( xs: 0, sm: 481px, md: 801px, lg: 992px, xl: 1200px);
 $container-max-widths: ( sm: 100%, md: 720px, lg: 960px, xl: 1120px);
 $grid-columns: 12 !default;
 $grid-gutter-width: 30px !default;
@@ -170,8 +170,8 @@ $h1-font-size : rem(55);
 $h2-font-size : rem(20.54);
 $h3-font-size : rem(16);
 $h4-font-size : rem(14);
-// $h5-font-size : rem(16);
-// $h6-font-size : rem(14);
+$h5-font-size : rem(16);
+$h6-font-size : rem(14);
 
 /* heading custom */
 

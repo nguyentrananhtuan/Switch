@@ -19,8 +19,10 @@ const Header = (($) => {
     constructor (element, config) {
       this._element = $(element)
       this._config = this._getConfig(config)
+      this.myFunction()
       $(window).resize(this.onResizeWindow.bind(this))
       this.scrollPinHeader()
+      // this.closeMenu()
     }
     // public api
     static get Default () {
@@ -31,14 +33,26 @@ const Header = (($) => {
       this.scrollPinHeader()
     }
 
-    myFunction() {
-      var x = document.getElementById("showmenu");
-      if (x.className === "showmenu") {
-          x.className += " show";
+  myFunction() {
+    $('.icon-open').click((e) => {
+      let ele  = e.currentTarget
+      console.log(1)
+      if($(ele).hasClass('close')){
+        $(ele).removeClass('close')
+        $('.showmenu ').removeClass('show')
       } else {
-          x.className = "showmenu";
+        $(ele).addClass('close')
+        $('.showmenu ').addClass('show')
       }
+    })
   }
+  // closeMenu() {
+  //   $('.close').click((e) => {
+  //     $('.showmenu').removeClass('show')
+  //     $(this).addClass('icon-open')
+  //     $('.close').removeClass('close')
+  //   })
+  // }
     settingPin () {
       let scrollTop = $(window).scrollTop()
       if (scrollTop > this._config.scrollT) {

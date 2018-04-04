@@ -1,12 +1,12 @@
-.whatwedo{
+.mod-whatwedo{
     background-color:#fff; 
-    .whatwedo-content1 {
+    .whatwedo-head {
         padding-top: 40px;
         padding-bottom: 70px;
         position: relative;
 
     }
-    .whatwedo-content2{
+    .whatwedo-body{
         padding-bottom: 70px;
         text-align: center;
         .row{
@@ -21,6 +21,11 @@
         .lorem{
             font-size: 24px;
             font-weight: bold;
+            color: #828181;
         }
     }
+}
+.mod-wwd-col{
+    @extend .col-md-4;
+    @extend .col-sm-6;
 }

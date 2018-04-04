@@ -84,7 +84,7 @@ const UserAgent = (() => {
     })
   }
   const slickSlider = () => {
-    $('.testimonials-content2').slick({
+    $('.testimonials-body').slick({
       dots: false,
       slidesToShow: 1,
       infinite: true,

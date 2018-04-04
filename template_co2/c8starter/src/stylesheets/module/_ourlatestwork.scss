@@ -1,7 +1,7 @@
-.ourlatestwork{
+.mod-ourlatestwork{
     background-color:$green-100;
     text-align: center;
-    .ourlatestwork-content1{
+    .ourlatestwork-head{
       //  text-align: center;
       h2{
           color:#207b20;
@@ -32,7 +32,7 @@
             }
         }
     }
-    .ourlatestwork-content2{
+    .ourlatestwork-body{
         
         .row-edit{
             justify-content: center;
@@ -55,7 +55,12 @@
         // }
     }    
 
-    .ourlatestwork-content3{
+    .ourlatestwork-foot{
         padding-bottom: 15px;
     }
+}
+.mod-olw-col{
+    @extend .col-lg-2;
+    @extend .col-md-4;
+    @extend .col-6;
 }
