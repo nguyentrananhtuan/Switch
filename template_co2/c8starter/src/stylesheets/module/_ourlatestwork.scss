@@ -2,17 +2,21 @@
     background-color:$green-100;
     text-align: center;
     .ourlatestwork-head{
-      //  text-align: center;
-      h2{
-          color:#207b20;
-      }
-      h3{
-          color: #2b9b2b;
-      }
         padding-top: 40px;
         padding-bottom: 60px;
+        h2{
+            color:#207b20;
+            &::after{
+                background-color :#207b20;
+            }
+        }
+        p{
+        color: #2b9b2b;
+        }
         .button-work{
             word-spacing: -4px;
+            padding: 0;
+            padding-top: 60px;
             button{
                 border: 1px solid #2b9b2b;
                 background-color: white;
@@ -22,8 +26,6 @@
                 color: white;
                 background-color: #2b9b2b;
             }
-            padding: 0;
-            padding-top: 60px;
             #btn1{
             border-radius: 25px 0px 0px 25px;
              }
@@ -46,13 +48,8 @@
             img{
                 margin: 15px 0px ;
                 width: 100%;
-                }   
+            }   
         } 
-        
-        // .col-img{
-        //    padding: 15px;
-        //     max-width: 20%;
-        // }
     }    
 
     .ourlatestwork-foot{

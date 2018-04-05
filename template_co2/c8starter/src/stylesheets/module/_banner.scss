@@ -7,16 +7,23 @@
     h1{
         color:white;
     }
-    .banner-title{
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 40%;
-    }
-    .scroll{
-        position: absolute;
-        bottom: 20px;
-        left: 0;
-        right: 0;
-    }
+   
+}
+.banner-body{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
 }

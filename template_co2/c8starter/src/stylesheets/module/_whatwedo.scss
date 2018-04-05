@@ -1,28 +1,28 @@
 .mod-whatwedo{
     background-color:#fff; 
-    .whatwedo-head {
-        padding-top: 40px;
-        padding-bottom: 70px;
-        position: relative;
+   
+}
+.whatwedo-head {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    position: relative;
 
+}
+.whatwedo-body{
+    padding-bottom: 70px;
+    text-align: center;
+    .row{
+        justify-content: center;
     }
-    .whatwedo-body{
-        padding-bottom: 70px;
-        text-align: center;
-        .row{
-            justify-content: center;
-        }
-        .border-img{
-            display: inline-block;
-            border: 30px solid#e1f3e1 ;
-            border-radius: 25px;
-            background-color: #e1f3e1;
-        }
-        .lorem{
-            font-size: 24px;
-            font-weight: bold;
-            color: #828181;
-        }
+    .border-img{
+        display: inline-block;
+        border: 30px solid#e1f3e1 ;
+        border-radius: 25px;
+        background-color: #e1f3e1;
+        
+    }
+    p{
+        color: #828181;
     }
 }
 .mod-wwd-col{

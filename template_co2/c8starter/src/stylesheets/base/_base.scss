@@ -52,8 +52,7 @@ h2{
   color:#828181;
   text-transform: uppercase;
   position: relative;
-}
-h2::before {
+  &::after {
   content: "";
     position: absolute;
     top: 30px;
@@ -62,11 +61,31 @@ h2::before {
     width: 45px;
     margin: 0 auto;
     height: 2px;
-    background-color: black;
+    background-color: #828181;
+  }
 }
 h3{
   padding-top: 20px;
-  color:#b7b3b3;
+  color:#828181;
+}
+h4{
+  color: #dddddd;
+  position: relative;
+  padding: 15px 0px;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 0;
+    left: 0;
+    width: 30px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #dddddd;
+  }
+}
+h5{
+  color: #9c9c9c;
 }
 ol,
 ul {
@@ -79,8 +98,7 @@ img {
   max-width: 100%;
 }
 p{
-  color: #444444;
-  font-size: 15px;
+  color: #b7b3b3;
 }
 blockquote {
   font-size: 1em;

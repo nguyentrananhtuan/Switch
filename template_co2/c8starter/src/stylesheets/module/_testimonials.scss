@@ -7,27 +7,31 @@
     }
     .testimonials-body{
         padding: 60px 0px;
+        p{
+            color:#444444;
+        }
         .row{
+            align-items: center;
+            justify-content: center;
             padding-top: 20px;
-            .col-6{
-                padding-left: 0px;
-              img{
+            img{
                 display: initial;
-                }
-               
             }
             .p1{
                 margin: 0;
-            }
+            }   
             .p2{
                 color: #cccccc;
             }
         }
     }
 }
-.mod-testi-col{
-    @extend .col-6;
+.mod-testi-img{
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+}
+.mod-testi-title{
+    padding-left: 10px;
 }

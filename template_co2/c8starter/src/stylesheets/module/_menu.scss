@@ -18,48 +18,22 @@
     position: relative;
     color: $white;
     line-height: 1.2em;
-    &:hover,
+    &:hover, 
     &.active {
-      color: $link-color;
+      color:$white;
     }
     a {
       display: block;
       color: inherit;
       text-decoration: none;
-      
       &:hover{
         border-top: 5px solid $green-100;
+        text-decoration-color: $white;
       }
     }
 
   }
 }
-
-// .main-menu-dropdown {
-//   width: 100%;
-//   margin: 0;
-//   font-size: 1em;
-//   border: none;
-//   box-shadow: 2px 9px 18px -6px rgba(0, 0, 0, .22);
-//   li {
-//     text-transform: uppercase;
-//     font-size: .85em;
-//     li {
-//       text-transform: none;
-//     }
-//   }
-//   ul {
-//     margin: 0;
-//     @extend .list-unstyled;
-//     li {
-//       color: $gray-900;
-//     }
-//     a {
-//       padding: 10px 15px;
-//     }
-//   }
-// }
-
 .hamburger-menu {
   @extend .navbar-toggler;
   padding: 0;
