@@ -140,7 +140,8 @@
 // max-width 767px
 @include media-breakpoint-down(md) {
   .main-menu-ul {
-    padding: 1.5em 0;
+    padding: 0;
+    margin: 2.5em 0;
     >li {
       font-size: 1.3em;
       >a {
